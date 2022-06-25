@@ -1,0 +1,258 @@
+/* CORPO */
+
+body{
+    font-family: Nunito, sans-serif; color: #1c1c1c;
+}
+
+h1, h2, h3 {
+    font-family:  Asap, sans-serif; color: #000000;
+}
+
+.botao {
+        color: #FFFFFF;
+        text-decoration: nome;
+        padding: 10px 30px;
+        background-color: #191970;
+        font-size: .9em;
+        border-radius: 3px;
+}
+
+/* Navegação */
+
+nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #191970;
+}
+
+nav > a {
+            text-decoration: nome;
+            color: #FFFFFF;
+            font-weight: 800;
+            font-size: 32px;
+            font-family: Yelowwtail, serif;
+
+}
+
+
+nav ul {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: nome;
+        padding: 0;
+        width: 100%;
+
+}
+
+
+nav ul li a {
+            display: inline-block;
+            padding: 10px 0;
+            width: 100%;
+            text-decoration: nome;
+            color: #FFFFFF;
+}
+
+/* Cabeçalho */
+
+header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url("../img/cambio.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 20px;
+}
+
+
+header h1{
+
+    color: #FFFFFF;
+}
+
+header p{
+    margin-bottom: 2em;
+}
+
+#Sobre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px 10px 20px 20px;
+        background-color: #191970;
+        color: #FFFFFF;
+}
+#Sobre h2 {
+    color: #FFFFFF; 
+}       
+
+#Sobre p {
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+
+}
+
+#Sobre .botao {
+    background-color: #F1F1F1;
+    color: #1c1c1c;
+}
+
+/*Serviços*/
+
+#Serviços {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+}
+
+#Serviços div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+
+}
+
+#Fotos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+
+}
+
+#Fotos h2 {
+            margin-bottom: 20px;
+}
+
+#Fotos img {
+        width: 100px;
+}
+
+/*Contatos*/
+
+#Contatos {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+
+
+}
+
+#Contatos h2 {
+    color: #000000;
+}
+
+footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #191970;
+        color: #FFFFFF;
+}
+
+footer a {
+            text-decoration: nome;
+            color: #00FFFF;
+}
+
+@media screen and (min-width: 768px) {
+
+    /*nav*/
+
+    nav {
+            flex-direction: row;
+            justify-content: space-around;
+
+    }
+
+    nav ul {
+            flex-direction: row;
+            width: 70%;
+    }
+}
+
+    /*Cabeçalho*/
+
+    header {
+            height: 600px;
+            height: 60vh;
+            justify-content: center;
+
+    }
+
+    /*Sobre*/
+
+    #Sobre {
+            height: 250px;
+            height: 30vh;
+            justify-content: center;
+            min-height: 250px;
+    }
+
+    /*Serviços*/
+
+    #Serviços {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            max-width: 1000px;
+            margin: 0 auto;
+    }
+
+    #Serviços h2 {
+                text-align: center;
+                width: 100%;
+    }
+
+    #Serviços div {
+                flex-grow: 1;
+                flex-basis: 150px;
+                padding: 0 10px;
+    }
+
+    /*Fotos*/
+
+    #Fotos {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    #Fotos h2 {
+            width: 100%;
+            text-align: center;
+
+    }
+
+    #Fotos img {
+            width: 33.3333333%;
+    }
+
+    /*Contatos*/
+
+    #Contatos {
+
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 500px;
+            margin-bottom: 0 auto;
+
+    }
+
+    #Contatos h2, #Contatos p {
+            width: 100%;
+    }
